@@ -1,0 +1,194 @@
+/* line 1, ../sass/style.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 7, ../sass/style.scss */
+.header {
+  background: #FFF;
+}
+
+/* line 10, ../sass/style.scss */
+.logo {
+  width: 160px;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+/* line 15, ../sass/style.scss */
+.logo img {
+  width: 100%;
+}
+
+/* line 20, ../sass/style.scss */
+.libraries--new {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  transform: translateX(-50%) translateY(-50%);
+}
+/* line 26, ../sass/style.scss */
+.libraries--new input[type="text"] {
+  height: 45px;
+  border: 0;
+  width: 100%;
+  padding: 15px;
+  font-weight: 100;
+  font-size: 15px;
+}
+/* line 34, ../sass/style.scss */
+.libraries--new input[type="text"]:focus {
+  outline: none;
+}
+
+/* line 39, ../sass/style.scss */
+.container-videos {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: #222;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+/* line 49, ../sass/style.scss */
+.container-videos video {
+  min-width: 130%;
+  min-height: 130%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  transition: .2s;
+}
+/* line 57, ../sass/style.scss */
+.container-videos video.clicked {
+  filter: brightness(180%);
+  -webkit-filter: brightness(180%);
+}
+/* line 62, ../sass/style.scss */
+.container-videos video.not-remove {
+  filter: brightness(20%);
+  -webkit-filter: brightness(20%);
+}
+/* line 67, ../sass/style.scss */
+.container-videos video:nth-child(1) {
+  z-index: 1;
+}
+
+/* line 73, ../sass/style.scss */
+.key-content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 600px;
+  opacity: 0;
+  z-index: -1;
+  transition: .5s;
+  transition-delay: .5hs;
+}
+/* line 83, ../sass/style.scss */
+.key-content.is-open {
+  opacity: 1;
+  z-index: 2;
+}
+/* line 87, ../sass/style.scss */
+.key-content .key {
+  width: 180px;
+  height: 180px;
+  background: #f0f0f0;
+  float: left;
+  margin: 10px;
+  line-height: 160px;
+  text-align: center;
+  font-weight: 800;
+  color: #585858;
+  font-size: 28px;
+  position: relative;
+  border-radius: 25px;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  transition: .1s;
+}
+/* line 104, ../sass/style.scss */
+.key-content .key .info {
+  position: absolute;
+  bottom: 60px;
+  line-height: 14px;
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 400;
+}
+/* line 114, ../sass/style.scss */
+.key-content .key.active {
+  background: #81bfde;
+  border-color: #4f8eae;
+}
+/* line 120, ../sass/style.scss */
+.key-content .clip-key {
+  clear: both;
+}
+/* line 123, ../sass/style.scss */
+.key-content .clip-key .key {
+  height: 100px;
+  line-height: 70px;
+  background: #f0f0f0;
+}
+/* line 128, ../sass/style.scss */
+.key-content .clip-key .key .info {
+  bottom: 20px;
+}
+/* line 132, ../sass/style.scss */
+.key-content .clip-key .key.active {
+  background: #ffc96e;
+  border-color: #da9521;
+}
+
+/* line 140, ../sass/style.scss */
+.title-form {
+  color: #fff;
+  font-size: 25px;
+  letter-spacing: .05em;
+  text-align: center;
+  margin-bottom: 30px;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+/* line 151, ../sass/style.scss */
+.controls {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  background: #81bfde;
+}
+/* line 156, ../sass/style.scss */
+.controls a {
+  padding: 30px;
+  display: block;
+}
+/* line 159, ../sass/style.scss */
+.controls a img {
+  width: 40px;
+}
+
+/* line 165, ../sass/style.scss */
+.loader {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  z-index: 30;
+  display: none;
+}
+
+/* line 174, ../sass/style.scss */
+svg path,
+svg rect {
+  fill: #fff;
+}

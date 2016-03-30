@@ -1,0 +1,112 @@
+<div class="app-container">
+
+    <div class="container-videos">
+        <video src="http://www.mazwai.com/system/posts/videos/000/000/216/original/test_flight.mp4?1453573155" muted autoplay loop class="1 not-remove"></video>
+        <video src="http://www.mazwai.com/system/posts/videos/000/000/210/original/bault.mp4?1450592003" muted autoplay loop class="2 not-remove"></video>
+        <video src="http://www.mazwai.com/system/posts/videos/000/000/201/original/9th-may.mp4?1446406268" muted autoplay loop class="3 not-remove"></video>
+    </div>
+
+    <div class="header">
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="" />
+        </div>
+    </div>
+    <form class="libraries--new" (ngSubmit)="addLibrary(key.value)">
+        <label for="key" class="title-form">Choisissez un fond musical : </label>
+        <input type="text" name="key" #key placeholder="Exemple: Soprano">
+    </form>
+
+    <div class="key-content">
+        <div class="key key-1">
+            K
+            <div class="info">
+                Kick
+            </div>
+        </div>
+        <div class="key key-2">
+            C
+            <div class="info">
+                Clap
+            </div>
+        </div>
+        <div class="key key-3">
+            T
+            <div class="info">
+                Triangle
+            </div>
+        </div>
+        <div class="key key-4">
+            H
+            <div class="info">
+                Hit Hat
+            </div>
+        </div>
+
+        <div class="clip-key">
+            <div class="key key-c-1 active">
+                1
+                <div class="info">
+                    Vidéo 1
+                </div>
+            </div>
+            <div class="key key-c-2">
+                2
+                <div class="info">
+                    Vidéo 1
+                </div>
+            </div>
+            <div class="key key-c-3">
+                3
+                <div class="info">
+                    Vidéo 1
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="loader">
+        <div class="loader loader--style3" title="2">
+          <svg version="1.1" id="loader-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="40px" height="40px" viewBox="0 0 50 50" style="enable-background:new 0 0 50 50;" xml:space="preserve">
+          <path fill="#000" d="M43.935,25.145c0-10.318-8.364-18.683-18.683-18.683c-10.318,0-18.683,8.365-18.683,18.683h4.068c0-8.071,6.543-14.615,14.615-14.615c8.072,0,14.615,6.543,14.615,14.615H43.935z">
+            <animateTransform attributeType="xml"
+              attributeName="transform"
+              type="rotate"
+              from="0 25 25"
+              to="360 25 25"
+              dur="0.6s"
+              repeatCount="indefinite"/>
+            </path>
+          </svg>
+        </div>
+    </div>
+
+
+    <audio controls id="preview" style="display: none;">
+      <source src="" type="audio/ogg">
+      <source src="" type="audio/mpeg">
+    </audio>
+
+
+    <!-- Audio -->
+
+    <audio id="clap">
+      <source src="assets/son/long-snare.wav" type="audio/ogg">
+      <source src="assets/son/long-snare.wav" type="audio/mpeg">
+    </audio>
+
+    <audio id="triangle">
+      <source src="assets/son/percu.wav" type="audio/ogg">
+      <source src="assets/son/percu.wav" type="audio/mpeg">
+    </audio>
+
+    <audio id="hithat">
+      <source src="assets/son/hat.wav" type="audio/ogg">
+      <source src="assets/son/hat.wav" type="audio/mpeg">
+    </audio>
+
+    <audio id="kick">
+      <source src="assets/son/loud-kick.wav" type="audio/ogg">
+      <source src="assets/son/loud-kick.wav" type="audio/mpeg">
+    </audio>
+</div>
